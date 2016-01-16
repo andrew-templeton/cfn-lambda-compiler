@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+    "Source"
+  ],
+  "properties": {
+    "Source": {
+      "$ref": "#/definitions/S3CodeLocation"
+    },
+    "Destination": {
+      "$ref": "#/definitions/S3CodeLocation"
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "S3CodeLocation": {
+      "type": "object",
+      "properties": {
+        "S3Bucket": {
+          "type": "string"
+        },
+        "S3Key": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "S3Bucket",
+        "S3Key"
+      ]
+    }
+  }
+}

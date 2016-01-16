@@ -1,0 +1,36 @@
+{
+  "name": "cfn-lambda-recompiler",
+  "version": "0.0.1",
+  "description": "Recompile the node_modules in a Lambda inside an actual lambda and rebundle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cfn-lambda-deploy": "chmod +x ./node_modules/cfn-lambda/deploy.sh && ./node_modules/cfn-lambda/deploy.sh;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrew-templeton/cfn-lambda-compiler.git"
+  },
+  "keywords": [
+    "lambda",
+    "compile",
+    "recompile",
+    "native",
+    "extension",
+    "compatibility",
+    "cfn",
+    "cloudformation",
+    "custom",
+    "resource"
+  ],
+  "author": "Andrew Templeton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrew-templeton/cfn-lambda-compiler/issues"
+  },
+  "homepage": "https://github.com/andrew-templeton/cfn-lambda-compiler#readme",
+  "dependencies": {
+    "cfn-lambda": "0.8.1",
+    "npm": "3.5.3"
+  }
+}
